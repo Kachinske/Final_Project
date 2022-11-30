@@ -1,4 +1,10 @@
-﻿bool CountLetters (string word, int maxletters)
+﻿string[] StringArray = {"Hello", "World", "and", "some", "more", "words", ":-P"};
+Console.WriteLine(string.Join(" ", StringArray));
+string[] OverWritedArray = OverwriteArrayWithWordsCertainLength(StringArray,3);
+Console.WriteLine(string.Join(" ", OverWritedArray));
+
+
+bool CountLetters (string word, int maxletters)
 {
     int counter = 0;
     foreach (var item in word)
